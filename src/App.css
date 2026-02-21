@@ -1,23 +1,28 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f5f7fa;
-  color: #333;
-}
-
-.card {
-  background: #ffffff;
-  padding: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-}
-
-/* Force table text color */
-.p-datatable {
+/* Fix Dialog Styling */
+.p-dialog {
+  background-color: #ffffff !important;
   color: #333 !important;
 }
 
-.p-datatable .p-datatable-thead > tr > th {
-  background-color: #f1f3f5;
-  color: #333;
+.p-dialog .p-dialog-header {
+  background-color: #f1f3f5 !important;
+  color: #333 !important;
+}
+
+.p-dialog .p-dialog-content {
+  color: #333 !important;
+}
+
+.p-inputtext {
+  color: #333 !important;
+}
+
+.p-button {
+  background-color: #ffffff !important;
+  color: #333 !important;
+  border: 1px solid #ccc !important;
+}
+
+.p-button:hover {
+  background-color: #f1f3f5 !important;
 }

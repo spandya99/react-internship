@@ -5,6 +5,7 @@ import { Button } from "primereact/button";
 //import { fetchArtworks } from "../services/api";
 import SelectionOverlay from "./SelectionOverlay";
 import { fetchArtworks } from "../services/api.js";
+import "../App.css";
 
 function ArtworkTable() {
   const [artworks, setArtworks] = useState([]);
@@ -74,11 +75,12 @@ function ArtworkTable() {
   return (
     <div className="card">
       <Button
-        label="Custom Select"
-        icon="pi pi-plus"
-        className="p-mb-3"
-        onClick={() => setOverlayVisible(true)}
-      />
+  label="Custom Select"
+  icon="pi pi-plus"
+  severity="primary"
+  className="p-mb-3"
+  onClick={() => setOverlayVisible(true)}
+/>
 
       <DataTable
         value={artworks}
